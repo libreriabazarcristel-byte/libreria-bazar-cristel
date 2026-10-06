@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Administración - Librería Bazar Cristel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- LOGIN -->
+    <div id="login">
+
+        <h2>🔐 Acceso de administrador</h2>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Correo electrónico"
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Contraseña"
+        >
+
+        <button onclick="iniciarSesion()">
+            Iniciar sesión
+        </button>
+
+        <p id="mensajeLogin"></p>
+
+    </div>
+
+
+    <!-- PANEL DE ADMINISTRACIÓN -->
+    <div id="panelAdmin">
+
+        <header class="encabezado">
+
+            <h1>🔐 Panel de Administración</h1>
+
+            <p>
+                Librería Bazar Cristel
+            </p>
+
+        </header>
+
+
+        <main>
+
+            <section class="formulario">
+
+                <h2>➕ Agregar producto</h2>
+
+
+                <label>
+                    Nombre del producto
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ejemplo: Cuaderno A4"
+                >
+
+
+                <label>
+                    Categoría
+                </label>
+
+                <select id="categoria">
+
+                    <option value="Cuadernos">
+                        Cuadernos
+                    </option>
+
+                    <option value="Lapiceros">
+                        Lapiceros
+                    </option>
+
+                    <option value="Colores">
+                        Colores
+                    </option>
+
+                    <option value="Manualidades">
+                        Manualidades
+                    </option>
+
+                    <option value="Otros">
+                        Otros
+                    </option>
+
+                </select>
+
+
+                <label>
+                    Precio
+                </label>
+
+                <input
+                    type="number"
+                    id="precio"
+                    placeholder="Ejemplo: 8.50"
+                    step="0.01"
+                >
+
+
+                <label>
+    Imagen del producto
+</label>
+
+<input
+    type="text"
+    id="imagen"
+    placeholder="Pega aquí el enlace de la imagen"
+>
+
+
+                <label>
+                    Descripción
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    placeholder="Escribe una breve descripción"
+                ></textarea>
+
+
+                <button
+                    class="boton-agregar"
+                    onclick="agregarProducto()"
+                >
+                    ➕ Agregar producto
+                </button>
+
+            </section>
+
+
+            <section>
+
+                <h2>📦 Productos registrados</h2>
+
+                <div id="listaProductos"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+
+</html>

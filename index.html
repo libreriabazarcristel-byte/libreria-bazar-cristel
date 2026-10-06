@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Librería Bazar Cristel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <h1>📚 Librería Bazar Cristel</h1>
+
+        <p>
+            Todo lo que necesitas en un solo lugar ✨
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <div class="buscador">
+
+            <input 
+    type="text" 
+    id="buscador" 
+    placeholder="🔎 Buscar productos..."
+>
+
+        </div>
+
+
+        <div class="categorias">
+
+            <button onclick="filtrarCategoria('Todos')">
+                Todos
+            </button>
+
+            <button onclick="filtrarCategoria('Cuadernos')">
+                📚 Cuadernos
+            </button>
+
+            <button onclick="filtrarCategoria('Lapiceros')">
+                🖊️ Lapiceros
+            </button>
+
+            <button onclick="filtrarCategoria('Colores')">
+                🖍️ Colores
+            </button>
+
+            <button onclick="filtrarCategoria('Manualidades')">
+                🎨 Manualidades
+            </button>
+
+            <button onclick="filtrarCategoria('Otros')">
+                📦 Otros
+            </button>
+
+        </div>
+
+
+        <section id="productos" class="productos">
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h3>📚 Librería Bazar Cristel</h3>
+
+        <p>
+            Gracias por visitar nuestro catálogo 💙
+        </p>
+
+    </footer>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
